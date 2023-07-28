@@ -65,7 +65,7 @@
         {"label": "ALT", "row": 4, "col": 5, "x": 5, "y": 4.25},
         {"label": "MOD", "row": 4, "col": 6, "x": 6, "y": 4.50},
         {"label": "SPC", "row": 4, "col": 7, "x": 7.25, "y": 5.00},
-        {"label": "RET", "row": 4, "col": 8, "x": 9.75, "y": 5.00},
+        {"label": "RET", "row": 4, "col": 8, "x": 9.75, "y": 5},
         {"label": "MOD", "row": 4, "col": 9, "x": 11, "y": 4.50},
         {"label": "ALT", "row": 4, "col": 10, "x": 12, "y": 4.25},
         {"label": "GUI", "row": 4, "col": 11, "x": 13, "y": 4.00}
