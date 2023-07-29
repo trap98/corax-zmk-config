@@ -1,0 +1,12 @@
+on:
+  push:
+    branches: [ "main" ]
+  pull_request_target:
+    branches: [ "main" ]
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    uses: tklzg/zmk/.github/workflows/build-user-config.yml@encoder
