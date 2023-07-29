@@ -59,7 +59,7 @@
     };
 
     macros {
-        // undead ^
+        // undead `
         ud_grave: ud_grave {
             label = "UNDEAD_GRAVE";
             compatible = "zmk,behavior-macro";
@@ -79,6 +79,7 @@
             bindings = <&kp TILDE &kp SPACE>;
         };
 
+        // undead ^
         ud_caret: ud_caret {
             label = "UNDEAD_CARET";
             compatible = "zmk,behavior-macro";
@@ -86,6 +87,16 @@
             wait-ms = <10>;
             tap-ms = <10>;
             bindings = <&kp CARET &kp SPACE>;
+        };
+
+        // undead "
+        ud_sqt: ud_sqt {
+            label = "UNDEAD_SINGLE_QUOTE";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = <&kp SQT &kp SPACE>;
         };
     };
 
@@ -104,7 +115,7 @@ bindings = <
                &kp TAB   &kp Q     &kp W     &kp E     &kp R     &kp T                         &kp Y     &kp U     &kp I     &kp O     &kp P     &kp BSPC
 // _______________________________________________________________________                   _______________________________________________________________________
 // | ESC     | CTRL    | A       | S       | D       | F       | G       |                   | H       | J       | K       | L       | ;       | '       | F13     |
-     &kp ESC   &kp LCTRL &kp A     &kp S     &kp D     &kp F     &kp G                         &kp H     &kp J     &kp K     &kp L     &kp SEMI  &kp SQT   &kp RC(RA(F13))
+     &kp ESC   &kp LCTRL &kp A     &kp S     &kp D     &kp F     &kp G                         &kp H     &kp J     &kp K     &kp L     &kp SEMI  &ud_sqt   &kp RC(RA(F13))
 //           _____________________________________________________________________________________________________________________________________________
 //           | SHIFT   | Z       | X       | C       | V       | B       | MUTE    | PAUSE   | N       | M       | ,       | .       | /       | SHIFT   |
                &kp LSHFT &kp Z     &kp X     &kp C     &kp V     &kp B  &kp C_MUTE &kp C_PAUSE &kp N     &kp M     &kp COMMA &kp DOT    &kp SLASH &kp RSHFT
@@ -128,7 +139,7 @@ bindings = <
                &kp TAB   &kp Q     &kp W     &kp F     &kp P     &kp B                         &kp J     &kp L     &kp U     &kp Y     &kp SEMI  &kp BSPC
 // _______________________________________________________________________                   _______________________________________________________________________
 // | ESC     | CTRL    | A       | R       | S       | T       | G       |                   | M       | N       | E       | I       | O       | '       | F13     |
-     &kp ESC   &kp LCTRL &kp A     &kp R     &kp S     &kp T     &kp G                         &kp M     &kp N     &kp E     &kp I     &kp O     &kp SQT   &kp RC(RA(F13))
+     &kp ESC   &kp LCTRL &kp A     &kp R     &kp S     &kp T     &kp G                         &kp M     &kp N     &kp E     &kp I     &kp O     &ud_sqt   &kp RC(RA(F13))
 //           _____________________________________________________________________________________________________________________________________________
 //           | SHIFT   | Z       | X       | C       | D       | V       | MUTE    | PAUSE   | K       | H       | ,       | .       | /       | SHIFT   |
                &kp LSHFT &kp Z     &kp X     &kp C     &kp D     &kp V  &kp C_MUTE &kp C_PAUSE &kp K     &kp H     &kp COMMA &kp DOT    &kp SLASH &kp RSHFT
