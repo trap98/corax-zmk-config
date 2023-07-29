@@ -17,7 +17,25 @@
 // tapdance timing
 #define TAPTERM 100
 
+// additional caps word keys
+&caps_word {
+    continue-list = <UNDERSCORE MINUS LS(MINUS) UP DOWN LEFT RIGHT BSPC DEL>;
+};
+
+// faster layertap
+&lt {
+    quick-tap-ms = <0>;
+    tapping-term-ms = <150>; 
+};
+
+// faster modtap
+&mt {
+    tapping-term-ms = <200>;
+}; 
+
 / {
+
+    // adjust layer when both navigation keys are pressed 
     conditional_layers {
         compatible = "zmk,conditional-layers";
         tri_layer {
