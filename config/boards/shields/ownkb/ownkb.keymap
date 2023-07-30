@@ -118,7 +118,7 @@ bindings = <
      &kp ESC   &kp LCTRL &kp A     &kp S     &kp D     &kp F     &kp G                         &kp H     &kp J     &kp K     &kp L     &kp SEMI  &ud_sqt   &kp RC(RA(F13))
 //           _____________________________________________________________________________________________________________________________________________
 //           | SHIFT   | Z       | X       | C       | V       | B       | MUTE    | PAUSE   | N       | M       | ,       | .       | /       | SHIFT   |
-               &kp LSHFT &kp Z     &kp X     &kp C     &kp V     &kp B  &kp C_MUTE &kp C_PAUSE &kp N     &kp M     &kp COMMA &kp DOT    &kp SLASH &kp RSHFT
+          &mt LSHFT LBRC &kp Z     &kp X     &kp C     &kp V     &kp B  &kp C_MUTE &kp C_PAUSE &kp N     &kp M     &kp COMMA &kp DOT    &kp SLASH &mt RSHFT RBRC
 //                                         _________________________________________________________________________________
 //                                         | WIN     | ALT     | X/FSC   | SPACE   | ENTER   | x/BSPC  | ALT     | WIN     |
                                           &kp LGUI  &kp LALT  &lt SPEC ESC &kp SPACE &kp ENTER &lt NAV BSPC &kp RALT &kp RGUI
