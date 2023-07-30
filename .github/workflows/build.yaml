@@ -9,4 +9,5 @@ concurrency:
 
 jobs:
   build:
-    uses: tklzg/zmk/.github/workflows/build-user-config.yml@encoder
+    steps:
+      - uses: tklzg/zmk/.github/workflows/build-user-config.yml@encoder
