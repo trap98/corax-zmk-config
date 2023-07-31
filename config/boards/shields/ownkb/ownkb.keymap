@@ -142,7 +142,7 @@ bindings = <
      &kp ESC   &kp LCTRL &kp A     &kp R     &kp S     &kp T     &kp G                         &kp M     &kp N     &kp E     &kp I     &kp O     &ud_sqt   &kp RC(RA(F13))
 //           _____________________________________________________________________________________________________________________________________________
 //           | SHIFT   | Z       | X       | C       | D       | V       | MUTE    |PLAY/PAUS| K       | H       | ,       | .       | /       | SHIFT   |
-               &kp LSHFT &kp Z     &kp X     &kp C     &kp D     &kp V  &kp C_MUTE &kp C_PP    &kp K     &kp H     &kp COMMA &kp DOT    &kp SLASH &kp RSHFT
+          &mt LSHFT LBRC &kp Z     &kp X     &kp C     &kp D     &kp V  &kp C_MUTE &kp C_PP    &kp K     &kp H     &kp COMMA &kp DOT    &kp SLASH &mt RSHFT RBRC
 //                                         _________________________________________________________________________________
 //                                         | WIN     | ALT     | X/FSC   | SPACE   | ENTER   | x/BSPC  | ALT     | WIN     |
                                           &kp LGUI  &kp LALT  &lt SPEC ESC &kp SPACE &kp ENTER &lt NAV BSPC &kp RALT &kp RGUI
