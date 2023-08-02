@@ -9,9 +9,9 @@ manifest:
   projects:
     - name: zmk
       import: app/west.yml
-      #remote: zmkfirmware
-      #revision: main
-      remote: stephen
-      revision: stephen/split-encoder
+      remote: zmkfirmware
+      revision: main
+      #remote: stephen
+      #revision: stephen/split-encoder
   self:
     path: config
