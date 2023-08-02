@@ -12,6 +12,6 @@ manifest:
       #remote: zmkfirmware
       #revision: main
       remote: stephen
-      revision: split-encoder
+      revision: stephen/split-encoder
   self:
     path: config
