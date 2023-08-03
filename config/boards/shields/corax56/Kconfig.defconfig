@@ -1,14 +1,14 @@
-if SHIELD_OWNKB_LEFT
+if SHIELD_CORAX56_LEFT
 
 config ZMK_KEYBOARD_NAME
-    default "ownkb"
+    default "Corax56"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
 endif
 
-if SHIELD_OWNKB_LEFT || SHIELD_OWNKB_RIGHT
+if SHIELD_CORAX56_LEFT || SHIELD_CORAX56_RIGHT
 
 config ZMK_SPLIT
     default y

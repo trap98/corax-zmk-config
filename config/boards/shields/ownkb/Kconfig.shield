@@ -1,5 +1,0 @@
-config SHIELD_OWNKB_LEFT
-    def_bool $(shields_list_contains,ownkb_left)
-
-config SHIELD_OWNKB_RIGHT
-    def_bool $(shields_list_contains,ownkb_right)

@@ -1,4 +1,4 @@
-#include "ownkb.dtsi"
+#include "corax56.dtsi"
 
 &kscan0 {
     diode-direction = "col2row";
