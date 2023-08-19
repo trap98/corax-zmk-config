@@ -2,16 +2,16 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: tklzg
-      url-base: https://github.com/tklzg
-    - name: stephen
-      url-base: https://github.com/stephen
+    - name: petejohanson
+      url-base: https://github.com/petejohanson
   projects:
     - name: zmk
       import: app/west.yml
-      remote: zmkfirmware
-      revision: main
-      #remote: stephen
-      #revision: stephen/split-encoder
+      #remote: zmkfirmware
+      #revision: main
+      # use this branch for right side encoder support
+      # until split encoder is merged into main
+      remote: petejohanson
+      revision: stephen/split-encoder
   self:
     path: config
