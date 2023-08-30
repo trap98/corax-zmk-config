@@ -169,7 +169,7 @@
         adjust_layer {
             label = "Adjust";
             bindings = <
-                          &trans        &trans        &trans        &trans        &trans                    &trans      &trans      &trans        &trans  &trans
+                          &trans        &trans        &trans        &trans    &sys_reset                &sys_reset      &trans      &trans        &trans  &trans
             &trans         &to 1        &trans        &trans        &trans        &trans                    &trans      &trans      &trans        &trans  &trans  &trans
 &bt BT_CLR  &trans        &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2        &trans                    &trans  &bt BT_NXT  &bt BT_PRV  &out OUT_TOG  &trans  &trans  &trans
             &trans        &trans        &trans         &to 0        &trans        &trans  &trans    &trans  &trans      &trans      &trans        &trans  &trans  &trans
