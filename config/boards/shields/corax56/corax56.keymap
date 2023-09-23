@@ -132,39 +132,33 @@
         sym_layer {
             label = "Symbols";
             bindings = <
-                         &kp F1     &kp F2     &kp F3     &kp F4  &kp F5                    &kp F6     &kp F7     &kp F8    &kp F9   &kp F10
-            &kp LA(TAB)  &trans   &kp BSLH  &kp PRCNT   &kp DLLR  &trans                    &trans  &ud_caret   &kp LBRC  &kp RBRC    &trans  &kp F11
-&kp LA(ESC)      &trans  &trans   &kp LPAR   &kp RPAR  &kp COLON  &trans                    &trans    &ud_dqt   &kp LBKT  &kp RBKT  &kp SEMI   &trans  &trans
-                 &trans  &trans  &ud_grave     &kp AT   &kp AMPS  &trans  &trans    &trans  &trans   &kp HASH  &kp QMARK  &kp EXCL    &trans   &trans
+                         &kp F1    &kp F2     &kp F3     &kp F4  &kp F5                    &kp F6     &kp F7     &kp F8    &kp F9   &kp F10
+            &kp LA(TAB)  &trans  &kp BSLH  &kp PRCNT   &kp DLLR  &trans                    &trans   &kp BSLH   &kp PIPE &kp SLASH &ud_caret  &kp F11
+&kp LA(ESC)      &trans  &trans  &kp LPAR   &kp RPAR  &kp COLON  &trans                    &trans    &ud_dqt   &kp LBKT  &kp RBKT  &kp SEMI   &trans  &trans
+                 &trans  &trans &ud_grave  &kp AT      &kp AMPS  &trans  &trans    &trans  &trans   &kp HASH  &kp QMARK  &kp EXCL    &trans   &trans
                                             &trans     &trans  &trans  &trans    &trans  &trans     &trans     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_PREV C_NEXT>;
         };
+//             &kp UNDER 
+//              
+//                 (     &kp LT        &kp GT )
+// (LBRC RBRC)
 
-//         num_layer {
-//             label = "Numbers";
-//             bindings = <
-//                    &kp F1  &kp F2  &kp F3  &kp F4  &kp F5                    &kp F6    &kp F7     &kp F8     &kp F9  &kp F10
-//         &trans     &trans  &kp N4  &kp N5  &kp N6  &trans                    &trans  &kp PIPE  &kp UNDER  &kp SLASH   &trans   &kp F11
-// &trans  &trans    &kp DOT  &kp N1  &kp N2  &kp N3  &trans                    &trans   &kp PLUS &kp MINUS  &kp EQUAL   &kp STAR &trans  &trans
-//         &trans  &ud_tilde  &kp N7  &kp N8  &kp N9  &trans  &trans    &trans  &trans  &ud_sqt      &kp LT     &kp GT   &trans   &trans
-//                                    &trans  &trans  &kp N0  &trans    &trans  &trans    &trans     &trans
-//             >;
-
-//             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_PREV C_NEXT>;
-//         };
 
         // right mod
         nav_layer {
-            label = "Navigation";
+            label = "Num / Nav";
             bindings = <
-                &trans    &trans    &trans   &trans  &trans                              &trans     &trans        &trans           &trans  &trans
-        &trans  &kp LC(Q) &kp LC(W) &kp LC(F) &kp LC(P) &kp LC(B)                    &caps_word    &kp INS     &kp PSCRN  &kp PAUSE_BREAK  &trans  &trans
-&trans  &trans  &kp LC(A) &kp LC(R) &kp LC(S) &kp LC(T) &kp LC(G)                      &kp LEFT   &kp DOWN        &kp UP        &kp RIGHT  &trans  &trans  &trans
-        &trans  &kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(D) &kp LC(V)  &trans    &trans    &kp HOME  &kp PG_DN     &kp PG_UP          &kp END  &trans  &trans
-                                       &trans    &trans    &trans  &trans    &trans      &trans     &trans        &trans
+                &trans    &trans    &trans   &trans    &trans                         &trans     &trans        &trans           &trans  &trans
+        &trans  &trans    &kp N4    &kp N5   &kp N6    &kp PLUS                   &caps_word    &kp INS     &kp PSCRN  &kp PAUSE_BREAK  &trans  &trans
+&trans  &trans  &kp DOT   &kp N1    &kp N2   &kp N3    &kp EQUAL                    &kp LEFT   &kp DOWN        &kp UP        &kp RIGHT  &trans  &trans  &trans
+        &trans  &ud_tilde &kp N7    &kp N8   &kp N9    &kp STAR  &trans    &trans   &kp HOME  &kp PG_DN     &kp PG_UP          &kp END  &trans  &trans
+                                    &trans   &kp MINUS &kp N0    &trans    &trans     &trans     &trans        &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_PREV C_NEXT>;
         };
 
         adjust_layer {
