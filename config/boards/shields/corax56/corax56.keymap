@@ -112,7 +112,7 @@
                                          &kp LGUI &kp LALT &mo SYM     &kp SPACE      &kp ENTER &lt NAV ESC &kp RALT  &kp RGUI
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_PREV C_NEXT>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp DOWN UP>;
         };
 
         qwerty_layer {
@@ -125,7 +125,7 @@
                                 &trans  &trans  &trans  &trans    &trans  &trans  &trans     &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_PREV C_NEXT>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp DOWN UP>;
         };
 
         // left mod
@@ -139,7 +139,7 @@
                                             &trans     &trans   &trans &trans    &trans  &trans     &trans     &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_PREV C_NEXT>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp DOWN UP>;
         };
 
         // right mod
@@ -166,9 +166,7 @@
                                                     &trans        &trans        &trans  &trans    &trans  &trans      &trans      &trans
             >;
 
-            sensor-bindings =
-                <&inc_dec_kp C_VOL_DN C_VOL_UP>,
-                <&inc_dec_kp C_PREV C_NEXT>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp DOWN UP>;
         };
     };
 };
