@@ -93,7 +93,7 @@
         };
 
         sticky_adjust {
-            bindings = <&sl 5>;
+            bindings = <&sl ADJUST>;
             // sticky adjust layer on LALT+RALT
             key-positions = <51 56>;
         };
