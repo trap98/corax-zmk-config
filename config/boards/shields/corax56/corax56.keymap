@@ -35,7 +35,6 @@
     macros {
         // undead `
         ud_grave: ud_grave {
-            label = "UNDEAD_GRAVE";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <10>;
@@ -45,7 +44,6 @@
 
         // undead ~
         ud_tilde: ud_tilde {
-            label = "UNDEAD_TILDE";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <10>;
@@ -55,7 +53,6 @@
 
         // undead ^
         ud_caret: ud_caret {
-            label = "UNDEAD_CARET";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <10>;
@@ -65,7 +62,6 @@
 
         // undead '
         ud_sqt: ud_sqt {
-            label = "UNDEAD_SINGLE_QUOTE";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <10>;
@@ -75,7 +71,6 @@
 
         // undead "
         ud_dqt: ud_dqt {
-            label = "UNDEAD_DOUBLE_QUOTE";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <10>;
@@ -85,7 +80,6 @@
 
         // ascii arrow ->
         asc_arr: asc_arr {
-            label = "ASCII_ARROW";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <10>;
@@ -115,7 +109,7 @@
         compatible = "zmk,keymap";
 
         colemak_layer {
-            label = "Colemak";
+            display-name = "Colemak";
             bindings = <
                          &kp N1  &kp N2    &kp N3   &kp N4  &kp N5                               &kp N6       &kp N7    &kp N8   &kp N9    &kp N0
                 &kp TAB   &kp Q   &kp W     &kp F    &kp P   &kp B                                &kp J        &kp L     &kp U    &kp Y   &ud_sqt        &kp BSPC
@@ -128,7 +122,7 @@
         };
 
         qwerty_layer {
-            label = "QWERTY";
+            display-name = "QWERTY";
             bindings = <
                 &trans  &trans  &trans  &trans  &trans                    &trans  &trans     &trans   &trans    &trans
         &trans   &kp Q   &kp W   &kp E   &kp R   &kp T                     &kp Y   &kp U      &kp I    &kp O     &kp P  &trans
@@ -141,7 +135,7 @@
         };
 
         gaming_layer {
-            label = "WASD";
+            display-name = "WASD";
             bindings = <
                   &kp N5 &kp N1 &kp N2 &kp N3 &kp N4                    &trans  &trans     &trans   &trans    &trans
         &trans   &kp TAB  &kp Q  &kp W  &kp E  &kp R                     &kp Y   &kp U      &kp I    &kp O     &kp P  &trans
@@ -155,7 +149,7 @@
 
         // left mod
         sym_layer {
-            label = "Symbols";
+            display-name = "Symbols";
             bindings = <
                      &kp F1    &kp F2     &kp F3     &kp F4  &kp F5                      &kp F6     &kp F7     &kp F8    &kp F9     &kp F10
              &trans  &none   &kp BSLH  &kp PRCNT   &kp DLLR  &kp RA(LS(S))               &none    &kp PIPE  &ud_caret &kp SLASH  &kp RA(N5)  &kp F11
@@ -169,7 +163,7 @@
 
         // right mod
         nav_layer {
-            label = "Num / Nav";
+            display-name = "Navigation";
             bindings = <
                  &kp F1    &kp F2    &kp F3   &kp F4    &kp F5                         &kp F6     &kp F7        &kp F8           &kp F9  &kp F10
         &trans   &kp LBKT  &kp N7    &kp N8   &kp N9    &kp STAR                   &caps_word    &kp INS     &kp PSCRN  &kp PAUSE_BREAK  &trans  &trans
@@ -182,10 +176,10 @@
         };
 
         adjust_layer {
-            label = "Adjust";
+            display-name = "Adjust";
             bindings = <
                         &trans        &trans        &trans        &trans            &sys_reset                &sys_reset      &trans      &trans        &trans  &trans
-            &trans  &to QWERTY        &trans        &to WASD      &ext_power EP_ON     &ext_power EP_OFF          &trans      &trans      &trans        &trans  &trans  &trans
+            &trans  &to QWERTY        &trans        &to WASD      &ext_power EP_TOG &trans                &trans      &trans      &trans        &trans  &trans  &trans
 &bt BT_CLR  &trans      &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2          &out OUT_TOG                    &trans  &bt BT_NXT  &bt BT_PRV  &out OUT_TOG  &trans  &trans  &trans
             &trans      &trans        &trans         &to COLEMAK  &trans                &trans  &trans    &trans  &trans      &trans      &trans        &trans  &trans  &trans
                                                     &trans        &trans                &trans  &trans    &trans  &trans      &trans      &trans
