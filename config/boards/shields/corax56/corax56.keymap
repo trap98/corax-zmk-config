@@ -166,7 +166,7 @@
             display-name = "Navigation";
             bindings = <
                  &kp F1    &kp F2    &kp F3   &kp F4    &kp F5                         &kp F6     &kp F7        &kp F8           &kp F9  &kp F10
-        &trans   &none     &kp N7    &kp N8   &kp N9    &kp PLUS                        &none    &kp INS     &kp PSCRN  &kp PAUSE_BREAK  &none  &trans
+        &trans   &kp LBKT  &kp N7    &kp N8   &kp N9    &kp PLUS                        &none    &kp INS     &kp PSCRN  &kp PAUSE_BREAK  &none  &trans
 &trans  &trans   &kp DOT   &kp N1    &kp N2   &kp N3    &kp EQUAL                    &kp LEFT   &kp DOWN        &kp UP        &kp RIGHT  &none  &trans  &trans
         &trans   &ud_tilde &kp N4    &kp N5   &kp N6    &kp STAR &trans    &trans    &kp HOME  &kp PG_DN     &kp PG_UP          &kp END  &none  &trans
                                     &trans   &kp MINUS &kp N0    &trans    &trans      &trans     &trans        &trans
