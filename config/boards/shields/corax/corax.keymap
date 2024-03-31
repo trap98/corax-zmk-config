@@ -116,11 +116,11 @@
         colemak_layer {
             display-name = "Colemak";
             bindings = <
-                            &kp N1	&kp N2  &kp N3	    &kp N4	                                            &kp N5	    &kp N6	    &kp N7	    &kp N8	&kp N9	&kp N0
-        &kp TAB	            &kp Q	&kp W	&kp F	    &kp P       &kp B	                                &kp J	    &kp L	    &kp U	    &kp Y	&ud_sqt	&kp RC(RA(F13)) 
-&kp ESC &kp LCTRL           &kp A   &kp R   &kp S       &kp T       &kp G                                   &kp M       &kp N       &kp E       &kp I   &kp O   &kp BSPC  &kp RC(RA(F13))
-        &mt LSHFT LBRC    &kp Z	&kp X	&kp C	    &kp D	    &kp V	        &kp C_MUTE	&kp C_PP    &kp K	    &kp H	    &kp COMMA	&kp DOT	&kp DEL	&mt RSHFT RBRC
-                                            &kp LGUI    &kp LALT	&lthp SYM ESC	&kp SPACE	&kp ENTER	&lt NAV ESC	&kp RALT	&kp RGUI
+                        &kp N1	        &kp N2      &kp N3  	&kp N4	                                &kp N5	    &kp N6	    &kp N7	    &kp N8	&kp N9	&kp N0
+        &kp TAB	        &kp Q	&kp W	&kp F	    &kp P	    &kp B	                                &kp J	    &kp L	    &kp U	    &kp Y	&ud_sqt	&kp RC(RA(F13)) 
+&kp ESC &kp LCTRL	    &kp A	&kp R	&kp S	    &kp T	    &kp G	                                &kp M	    &kp N	    &kp E	    &kp I	&kp O	&kp BSPC         &kp RC(RA(F14))
+        &mt LSHFT LBRC  &kp Z	&kp X	&kp C	    &kp D	    &kp V	        &kp C_MUTE	&kp C_PP	&kp K	    &kp H	    &kp COMMA	&kp DOT	&kp DEL	&mt RSHFT RBRC
+                                        &kp LGUI    &kp LALT	&lthp SYM ESC	&kp SPACE	&kp ENTER	&lt NAV ESC	&kp RALT	&kp RGUI
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_DN PG_UP>;
@@ -146,7 +146,7 @@
         &kp ESC	&kp TAB	    &kp Q	&kp W	&kp E	&kp R	                &trans	&trans	&trans	&trans	&trans  &trans
 &trans  &trans	&kp LCTRL	&kp A	&kp S	&kp D	&kp F	                &trans	&trans	&trans	&trans	&trans	&trans  &trans
         &trans	&kp LBRC	&kp Z	&kp X	&kp C	&kp V	&trans	&trans	&trans	&trans	&trans	&trans	&trans	&trans
-                                     &trans	&trans	&trans	&trans	&trans	&trans	&trans	&trans
+                                    &trans	&trans	&trans	&trans	&trans	&trans	&trans	&trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_DN PG_UP>;
@@ -171,9 +171,9 @@
             display-name = "Num/Nav";
             bindings = <
                 &kp F1	    &kp F2	&kp F3	&kp F4	        &kp F5	                        &kp F6	        &kp F7	    &kp F8	    &kp F9	        &kp F10
-        &trans	&kp SLASH	&kp N7	&kp N8	&kp N9	        &kp STAR	                    &kp INS	        &kp HOME    &kp END 	&kp PSCRN   	&none       &trans
-&trans  &trans	&kp DOT	    &kp N1	&kp N2	&kp N3	        &kp EQUAL                       &kp LEFT	    &kp DOWN	&kp UP	    &kp RIGHT	    &kp SEMI    &trans  &trans
-        &trans	&ud_tilde	&kp N4	&kp N5	&kp N6	        &kp PLUS	  &trans	&trans	&kp PAUSE_BREAK &kp PG_DN	&kp PG_UP	&none	        &none       &trans
+       &trans	&kp SLASH	&kp N7	&kp N8	&kp N9	        &kp STAR	                    &kp INS	        &kp HOME    &kp END 	&kp PSCRN   	&none       &trans
+&trans &trans	&kp DOT	    &kp N1	&kp N2	&kp N3	        &kp EQUAL                       &kp LEFT	    &kp DOWN	&kp UP	    &kp RIGHT	    &kp SEMI    &trans  &trans
+       &trans	&ud_tilde	&kp N4	&kp N5	&kp N6	        &kp PLUS	  &trans	&trans	&kp PAUSE_BREAK &kp PG_DN	&kp PG_UP	&none	        &trans      &trans
                                     &trans	&mt LALT MINUS  &lt DOUBLE N0 &trans	&trans	&trans	        &trans	    &trans
             >;
 
@@ -184,11 +184,11 @@
         double_layer {
             display-name = "Double";
             bindings = <
-                &none   &none   &none   &none    &none                  &none   &none   &none   &none   &none
-        &trans	&none   &none   &none   &none    &none                  &none   &none   &none   &none   &none   &trans
-&trans  &trans	&none   &none   &none   &none    &none                  &none   &none   &none   &none   &none   &trans  &trans
-        &trans	&none	&none   &none   &none    &none  &trans	&trans	&none   &none   &none	&none	&none   &trans
-                                &trans	&trans   &trans &trans	&trans	&trans  &trans  &trans
+                &none   &none   &none   &none               &none                  &none   &none   &none   &none   &none
+        &trans	&none   &none   &none   &kp LS(RC(RA(P)))   &none                  &none   &none   &none   &none   &none   &trans
+&trans  &trans	&none   &none   &none   &none               &none                  &none   &none   &none   &none   &none   &trans  &trans
+        &trans	&none	&none   &none   &none               &none  &trans	&trans &none   &none   &none   &none   &none   &trans
+                                &trans	&trans              &trans &trans	&trans &trans  &trans  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_PREV C_NEXT>;
@@ -208,3 +208,4 @@
         };
     };
 };
+
