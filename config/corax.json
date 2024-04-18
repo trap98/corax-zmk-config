@@ -80,14 +80,6 @@
       "compatible": "alps,ec11",
       "label": "LEFT_ENCODER",
       "enabled": false
-    },
-    {
-      "ref": "encoder_right",
-      "name": "encoder_right",
-      "identifier": "encoder_right",
-      "compatible": "alps,ec11",
-      "label": "RIGHT_ENCODER",
-      "enabled": false
     }
   ]
 }
