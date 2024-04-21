@@ -37,64 +37,11 @@
 
     macros {
         // undead `
-
-        ud_grave: ud_grave {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <10>;
-            tap-ms = <10>;
-            bindings = <&kp GRAVE &kp SPACE>;
-        };
-
         // undead ~
-
-        ud_tilde: ud_tilde {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <10>;
-            tap-ms = <10>;
-            bindings = <&kp TILDE &kp SPACE>;
-        };
-
         // undead ^
-
-        ud_caret: ud_caret {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <10>;
-            tap-ms = <10>;
-            bindings = <&kp CARET &kp SPACE>;
-        };
-
         // undead '
-
-        ud_sqt: ud_sqt {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <10>;
-            tap-ms = <10>;
-            bindings = <&kp SQT &kp SPACE>;
-        };
-
         // undead "
-
-        ud_dqt: ud_dqt {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <10>;
-            tap-ms = <10>;
-            bindings = <&kp LS(SQT) &kp SPACE>;
-        };
-
         // ascii arrow ->
-
-        asc_arr: asc_arr {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <10>;
-            tap-ms = <10>;
-            bindings = <&kp MINUS &kp LS(DOT)>;
-        };
     };
 
     combos {
@@ -109,7 +56,7 @@
         };
 
         sticky_adjust {
-            bindings = <&sl 5>;
+            bindings = <&sl 3>;
 
             // sticky adjust layer on LALT+RALT
 
@@ -127,20 +74,7 @@
        &kp LEFT_BRACKET  &kp Q   &kp W   &kp E     &kp R               &kp T                                                    &kp Y                &kp U                   &kp I      &kp O    &kp P          &kp RIGHT_BRACKET
 &none  &kp MINUS         &kp A   &kp S   &kp D     &kp F               &kp G                                                    &kp H                &kp J                   &kp K      &kp L    &kp SEMICOLON  &kp SQT            &none
        &kp EQUAL         &kp Z   &kp X   &kp C     &kp V               &kp B                    &kp C_MUTE       &none          &kp N                &kp M                   &kp COMMA  &kp DOT  &kp SLASH      &kp BACKSLASH
-                                         &kp LGUI  &mt LEFT_SHIFT TAB  &mt LEFT_CONTROL ESCAPE  &lthp 3 SPACE    &lthp 2 ENTER  &mt RCTRL BACKSPACE  &mthp RIGHT_ALT DELETE  &kp RGUI
-            >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
-        };
-
-        gaming_layer {
-            display-name = "WASD";
-            bindings = <
-                 &kp TILDE  &kp N1  &kp N2  &kp N3  &kp N4                    &trans  &trans  &trans  &trans  &trans
-        &kp ESC  &kp TAB    &kp Q   &kp W   &kp E   &kp R                     &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans   &kp LCTRL  &kp A   &kp S   &kp D   &kp F                     &trans  &trans  &trans  &trans  &trans  &trans  &trans
-        &trans   &kp LBRC   &kp Z   &kp X   &kp C   &kp V   &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                                    &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
+                                         &kp LGUI  &mt LEFT_SHIFT TAB  &mt LEFT_CONTROL ESCAPE  &lthp 2 SPACE    &lthp 1 ENTER  &mt RCTRL BACKSPACE  &mthp RIGHT_ALT DELETE  &kp RGUI
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
@@ -178,24 +112,11 @@
 
         // double mod
 
-        double_layer {
-            display-name = "Double";
-            bindings = <
-                &none  &none  &none   &none              &none                     &none   &none   &none   &none  &none
-        &trans  &none  &none  &none   &kp LS(RC(RA(P)))  &none                     &none   &none   &none   &none  &none  &trans
-&trans  &trans  &none  &none  &none   &none              &none                     &none   &none   &none   &none  &none  &trans  &trans
-        &trans  &none  &none  &none   &none              &none   &trans    &trans  &none   &none   &none   &none  &none  &trans
-                              &trans  &trans             &trans  &trans    &trans  &trans  &trans  &trans
-            >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
-        };
-
         adjust_layer {
             display-name = "Adjust";
             bindings = <
               &none       &none         &none         &none              &sys_reset                      &sys_reset  &none       &none       &none         &none
-       &none  &to 0       &none         &to 1         &ext_power EP_TOG  &none                           &none       &none       &none       &none         &none  &none
+       &none  &to 0       &none         &none         &ext_power EP_TOG  &none                           &none       &none       &none       &none         &none  &none
 &none  &none  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2       &out OUT_TOG                    &none       &bt BT_NXT  &bt BT_PRV  &out OUT_TOG  &none  &none  &none
        &none  &none       &none         &to 0         &none              &none         &trans    &trans  &none       &none       &none       &none         &none  &none
                                         &trans        &trans             &trans        &trans    &trans  &trans      &trans      &trans
